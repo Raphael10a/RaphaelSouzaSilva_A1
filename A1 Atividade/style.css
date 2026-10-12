@@ -1,0 +1,24 @@
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+}
+img{
+    width: 700px;
+    height: 200px;
+}
+li{
+    font-size: larger;
+    list-style-type: none;
+}
+.resposta{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: rgb(252, 34, 34);
+}
+.resposta_img{
+    display: flex;
+    width: 500px;
+  
+}

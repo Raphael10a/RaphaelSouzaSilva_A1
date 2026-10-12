@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>A1 RESPOSTAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Atividade A1 – Universidade São Judas Tadeu!</h1>
+    </div>
+    <div>
+        <ul>
+            <li>
+                Q1. Analógico vs. Digital. Explique as diferenças entre um sinal analógico e um digital. Indique
+                aplicações desses sinais. Evidencie por que os computadores utilizam sinais digitais. 
+            </li>
+             <li class="resposta">
+                R1. Um sinal analógico é contínuo e pode assumir infinitos valores dentro de um intervalo.
+                 Um exemplo é o som captado por um microfone analógico ou a temperatura medida por um termômetro de mercúrio. 
+                 Um sinal digital utiliza valores discretos, 
+                 geralmente representados por 0 e 1, que correspondem aos bits utilizados pelos computadores.
+                 Exemplos de aplicações:
+                - Analógico: rádio AM/FM tradicional, toca-discos e termômetro de mercúrio.
+                - Digital: computadores, celulares, câmeras digitais e relógios digitais.
+                Os computadores utilizam sinais digitais porque seus circuitos eletrônicos 
+                conseguem representar e processar os estados binários de maneira confiável. Isso facilita o armazenamento, o processamento 
+                e a transmissão de informações.
+            </li>
+            <li>
+               Q2. Organização dos computadores. Explique o modelo de Von Neumman para a organização dos computadores.
+                Cite seus principais componentes, a forma como interagem e a função de cada um na arquitetura. 
+            </li>
+            <li class="resposta">
+                R2. O modelo de Von Neumann é uma arquitetura de computadores em que dados e instruções ficam armazenados na mesma memória.
+                Seus principais componentes são:
+                - Unidade de Controle (UC): coordena a execução das instruções e controla o funcionamento dos componentes.
+                - Unidade Lógica e Aritmética (ULA): realiza operações matemáticas e lógicas.
+                - Memória: armazena dados e instruções dos programas.
+                - Entrada: permite inserir informações, como por meio do teclado e do mouse.
+                - Saída: apresenta os resultados, como na tela ou na impressora.
+                - Registradores: armazenam temporariamente dados, endereços e instruções durante o processamento.
+                Esses componentes interagem por meio de barramentos que transportam dados, endereços e sinais de controle. A CPU busca uma instrução na memória, 
+                interpreta seu significado e a executa, repetindo esse processo continuamente.
+            </li>
+            <li>
+                Q3. Ciclo de instrução. Considere a instrução ADD R1, A, B. Explique como ela é executada em um computador,
+                mostrando detalhadamente cada ciclo que compõe essa execução. Faça o mesmo para MOV R1, A. 
+            </li>
+            <li class="resposta">
+                R3.A instrução ADD R1, A, B representa, nesta atividade, a soma dos valores de A e B, com o resultado armazenado no registrador R1.
+                A execução ocorre nas seguintes etapas:
+               <p></p>   1. Busca (Fetch): a unidade de controle busca a instrução na memória utilizando o contador de programa (PC).
+               <p></p>   2. Decodificação (Decode): a unidade de controle interpreta a instrução e identifica os operandos A e B e o destino R1.
+               <p></p>   3. Busca dos operandos: os valores de A e B são obtidos dos locais em que estão armazenados.
+               <p></p>  4. Execução (Execute): a ULA realiza a soma dos dois valores.
+               <p></p>  5. Escrita do resultado (Write-back): o resultado é armazenado no registrador R1.
+               <p></p>  6. Atualização do PC: o contador de programa é atualizado para indicar a próxima instrução, salvo quando ocorre um desvio.
+
+                Para a instrução MOV R1, A, o processo é semelhante, mas não há soma: o valor de A é copiado para R1.
+               <img class="resposta_img" src="img/R3_01.png" alt="">
+
+                No caso da instrução ADD:
+                <img class="resposta_img"src="img/R3_02.png" alt="">
+
+                A sintaxe exata pode variar conforme a arquitetura do processador, mas essas expressões representam o funcionamento solicitado.
+            </li>
+            <li>
+                Q4. Pipeline. Explique o conceito de pipeline aplicado à execução de instruções em um computador. 
+                Cite as vantagens e os potenciais problemas que podem surgir na aplicação dessa estratégia. 
+            </li>
+            <li class="resposta">
+                R4. O pipeline é uma técnica de processamento que divide a execução das instruções em etapas. Dessa forma, várias instruções podem estar 
+                sendo processadas ao mesmo tempo, cada uma em uma etapa diferente.
+                As etapas mais comuns são:
+                <p></p> 1. Busca: procura a instrução na memória.
+                <p></p>2. Decodificação: interpreta a instrução.
+                <p></p> 3. Execução: realiza a operação solicitada.
+                <p></p>4. Acesso à memória: lê ou grava dados, quando necessário.
+                <p></p> 5. Escrita: registra o resultado.
+                Vantagens:
+                - Aumenta a quantidade de instruções processadas por unidade de tempo.
+                - Melhora o aproveitamento dos componentes do processador.
+                - Pode aumentar o desempenho geral do computador.
+                Problemas potenciais:
+                - Dependência de dados: uma instrução precisa do resultado de outra.
+                - Conflitos estruturais: duas instruções precisam do mesmo recurso ao mesmo tempo.
+                - Desvios de execução: saltos condicionais podem exigir o descarte de instruções já iniciadas.
+            </li>
+            <li>
+                Q5. Conversão de bases numéricas. Preencha a tabela a seguir, convertendo os números para as bases indicadas.
+                Exiba todos os cálculos pertinentes. 
+            </li>
+            <li class="resposta">
+                Tabela preenchida com as conversões correspondentes:
+                <img class="resposta_img" src="img/R5_01.png" alt="">
+                Exemplos dos cálculos:
+                <img class="resposta_img" src="img/R5_02.png" alt="">
+                Para converter de binário para octal, agrupamos os bits de três em três. Para hexadecimal, agrupamos de quatro em quatro, 
+                completando com zeros à esquerda quando necessário.
+            </li>
+            <li>
+               Q6. Para as expressões lógicas a seguir, construa a tabela verdade e o circuito 
+               lógico correspondente. a) 𝑆₁  = 𝐴̅𝐵𝐶̅ +(𝐵̅𝐶 ⊕𝐴)⋅(𝐴𝐶 +𝐵) b) 𝑆2 = 𝐴+𝐵̅+𝐶̅ + 𝐴𝐵𝐶 + 𝐴 ⊕ 𝐶 
+            </li>
+            <li class="resposta">
+                R6.Uma tabela verdade apresenta todas as combinações possíveis das entradas e o resultado
+                 de uma expressão lógica. Para três variáveis (A, B e C), existem 2³=8 combinações.
+                <p>a) Expressão S₁ 
+                Considerando a expressão da imagem:</p>
+            <img class="resposta_img" src="img/R6_01.png" alt="">
+
+            A tabela verdade é:
+            <img class="resposta_img" src="img/R6_02.png" alt="">
+            b) Expressão S_₂
+            Considerando a expressão da imagem:
+            <img class="resposta_img" src="img/R6_03.png" alt="">
+
+            <img class="resposta_img" src="img/R6_04.png" alt="">
+
+            Legenda: a barra representa NOT (negação), o sinal + representa OR (OU), o ponto representa AND (E) e ⊕ representa XOR (OU exclusivo).
+            Para montar os circuitos, utilize as portas NOT, AND, OR e XOR conforme a expressão, respeitando as negações indicadas pelas barras.
+            </li>
+            <li>Q7. Análise de circuito lógico. Para os circuitos lógicos, determine a expressão lógica e a correspondente tabela
+                 verdade. 
+            </li>
+            <li class="resposta">
+                R1. Analógico vs. Digital. Explique as diferenças entre um sinal analógico e um digital. Indique
+                aplicações desses sinais. Evidencie por que os computadores utilizam sinais digitais. 
+            </li>
+            <li>
+                <img src="img/fluxograma_01.png" alt="primeiro fluxograma da A1">   <img src="img/fluxograma_02.png" alt="segundo fluxograma da A1">
+            </li>
+            <li> a) Primeiro circuito
+a expressão lógica correspondente é:
+    </li>
+            <img class="resposta_img" src="img/R7_01.png" alt="">
+            <li>
+                Uma forma mais organizada de representar o circuito é definir os sinais intermediários:
+                <img class="resposta_img" src="img/R7_02.png" alt="">
+                Tabela verdade:
+                <img class="resposta_img" src="img/R7_03.png" alt="">
+                Conclusão: a análise dos circuitos lógicos permite transformar as portas em expressões booleanas e construir tabelas verdade para
+                 verificar o resultado de cada combinação de entradas.
+                <h2>Feito por: Raphael Souza Silva, html e css simples!</h2>
+            </li>
+        </ul>
+            
+    </div>
+    
+</body>
+</html>
